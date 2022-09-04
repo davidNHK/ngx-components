@@ -5,11 +5,11 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
+        "createDefaultProgram": true,
         "project": [
           "projects/ngx-components/tsconfig.lib.json",
           "projects/ngx-components/tsconfig.spec.json"
-        ],
-        "createDefaultProgram": true
+        ]
       }
     }
   ]

@@ -1,9 +1,10 @@
-import { mount } from 'cypress/angular'
-import { ButtonComponent } from './button.component'
-import {describe, it} from "../test-helpers/test-runner"
+import { mount } from 'cypress/angular';
 
-describe("ButtonComponent", () => {
-  it("Button mount", () => {
-    mount(ButtonComponent)
-  })
-})
+import { describe, it } from '../test-helpers/test-runner';
+import { ButtonComponent } from './button.component';
+
+describe('ButtonComponent', () => {
+  it('Button mount', () => {
+    mount(ButtonComponent);
+  });
+});

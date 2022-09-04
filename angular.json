@@ -4,7 +4,6 @@
     "analytics": "97d73e90-9d01-4edf-932e-7b81520c7cee",
     "schematicCollections": ["@angular-eslint/schematics"]
   },
-  "defaultProject": "test-app",
   "newProjectRoot": "projects",
   "projects": {
     "ngx-components": {

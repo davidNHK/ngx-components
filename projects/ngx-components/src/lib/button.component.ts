@@ -1,21 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {  Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import cn from 'classnames';
+import "wired-elements/lib/wired-button"
+
+import { palette } from '../theme';
 
 @Component({
-  standalone: true,
   selector: 'ngx-button',
-  template: `
-    <p>
-      ngx-components works!
-    </p>
-  `,
-  styles: [
-  ]
+  standalone: true,
+  styles: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  template: `<wired-button class="{{classNames}}">ngx-components works!</wired-button>`,
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  classNames = ""
+  constructor() {
+    this.classNames = cn("primary", palette.primary.main, palette.primary.contrastText, palette.primary.hover.main, palette.primary.hover.contrastText)
   }
 
+  ngOnInit(): void {}
 }
