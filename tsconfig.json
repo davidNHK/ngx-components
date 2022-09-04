@@ -10,7 +10,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "noEmit": false,
-    "outDir": "./dist/out-tsc"
+    "outDir": "./dist/out-tsc",
+    "paths": {
+      "@busybox/ngx-components": [
+        "dist/ngx-components"
+      ],
+    }
   },
   "extends": "@busybox/tsconfig"
 }

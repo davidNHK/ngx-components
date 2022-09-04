@@ -2,7 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "97d73e90-9d01-4edf-932e-7b81520c7cee",
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -92,7 +94,9 @@
             "outputPath": "dist/test-app",
             "polyfills": "projects/test-app/src/polyfills.ts",
             "scripts": [],
-            "styles": ["projects/test-app/src/styles.css"],
+            "styles": [
+              "projects/test-app/src/styles.css"
+            ],
             "tsConfig": "projects/test-app/tsconfig.app.json"
           }
         },
@@ -134,7 +138,9 @@
             "main": "projects/test-app/src/test.ts",
             "polyfills": "projects/test-app/src/polyfills.ts",
             "scripts": [],
-            "styles": ["projects/test-app/src/styles.css"],
+            "styles": [
+              "projects/test-app/src/styles.css"
+            ],
             "tsConfig": "projects/test-app/tsconfig.spec.json"
           }
         }
